@@ -33,7 +33,7 @@ finance_agent = Agent(
     name='Financial AI Agent',
     model=Groq(id="llama-3.2-90b-vision-preview"),
     tools=[
-        YFinanceTools(stock_price=True, analyst_recommendations=True, stock_fundamentals=True, company_news=True),
+        YFinanceTools(stock_price=True, company_news=True,analyst_recommendations=True, stock_fundamentals=True),
     ],
     instructions=["Use tables to display the data"],
     show_tool_calls=True,
@@ -44,7 +44,7 @@ finance_agent = Agent(
 multi_ai_agent = Agent(
     team=[web_search_agent,finance_agent],
     model=Groq(id="llama-3.2-90b-vision-preview"),
-    instructions=["Always include sources", "Use tables to display the data"],
+    instructions=["Always include sources", "Use tables to display data"],
     show_tool_calls=True,
     markdown=True,
 )
