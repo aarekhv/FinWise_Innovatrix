@@ -58,6 +58,11 @@ Follow the steps below to set up **FinWise** on your local machine.
 
 ---
 
+## ⚠️ Known Errors:
+- Sometimes we get garbage output/response from the chatbot, it's due to some incompatiblity or some backend API issues that we've not been able to figure out yet. <b>But this can be easily resolved by reloading the site or restarting the streamlit interface.</b><br>(We figured that this must only happen because of some server-side issue)
+
+---
+
 ## 📬 Contact & Credits:
 This project was created as a submission for the **Google Campus Solution Challenge 2025**, under the team name **Innovatrix**.
 
