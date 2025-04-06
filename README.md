@@ -26,7 +26,7 @@ Welcome to **FinWise**, an intelligent financial chatbot assistant designed to p
 
 ---
 
-## ⚙️ Installation & Setup Guide
+ ⚙️ Installation & Setup Guide
 
 Follow the steps below to set up **FinWise** on your local machine.
 
