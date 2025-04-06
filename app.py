@@ -2,10 +2,9 @@ from phi.agent import Agent
 from phi.model.groq import Groq
 from phi.tools.yfinance import YFinanceTools
 from phi.tools.duckduckgo import DuckDuckGo
-import os
+from dotenv import load_dotenv
+load_dotenv()
 import streamlit as st
-os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-
 
 # Streamlit_Interface
 st.set_page_config("FinWise", page_icon="📈")
@@ -50,4 +49,21 @@ multi_ai_agent = Agent(
     markdown=True,
 )
 
-multi_ai_agent.print_response(userinput,stream=True)
+# Initializing MultiAIAgent
+if userinput:
+    with st.chat_message("user"):
+        st.markdown(userinput)
+
+    with st.chat_message("assistant"):
+        response = multi_ai_agent.run(userinput)
+
+
+        for message in response.messages[::-1]:
+            if message.role == "assistant" and message.content:
+                final_message = message.content
+                break
+
+        if final_message:
+            st.markdown(final_message)
+        else:
+            st.markdown("⚠️ Sorry, I couldn't generate a response.")
