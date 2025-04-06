@@ -10,6 +10,7 @@ import streamlit as st
 st.set_page_config("FinWise", page_icon="📈")
 st.sidebar.header("What is FinWise?")
 st.sidebar.markdown("FinWise is a chatbot trained to provide financial insights and stock analysis.")
+st.sidebar.header("Chat History:")
 st.title("📈FinWise!")
 st.caption("🚀 A chatbot trained for you to get financial insights and stock analysis.")
 with st.chat_message("assistant"):
