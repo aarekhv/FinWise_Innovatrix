@@ -2,9 +2,10 @@ from phi.agent import Agent
 from phi.model.groq import Groq
 from phi.tools.yfinance import YFinanceTools
 from phi.tools.duckduckgo import DuckDuckGo
-from dotenv import load_dotenv
-load_dotenv()
+import os
 import streamlit as st
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+
 
 # Streamlit_Interface
 st.set_page_config("FinWise", page_icon="📈")
