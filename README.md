@@ -10,60 +10,60 @@ Welcome to **FinWise**, an intelligent financial chatbot assistant designed to p
 - 📰 **Company News & Analyst Recommendations**
 - 🔍 **Web Search via DuckDuckGo for financial queries**
 - 🤖 **Multi-agent AI System** using [Phi](https://github.com/phidatahq/phi)
-- 🧠 Powered by **Groq LLaMA 3.2 - 90B**
+- 🧠 Powered by **Groq LLaMA 3.2 - 90B (LLM Model)**
 
 ---
 
 ## 🛠️ Tech Stack
 
-- `Python 3.12+`
-- `Streamlit`
-- `Phi Agents`
-- `Groq API`
-- `YFinanceTools`
-- `DuckDuckGo Search`
-- `dotenv`, `pandas`, `numpy`
+- Python 3.12.0
+- Streamlit
+- Phi Agents
+- Groq API
+- YFinanceTools
+- DuckDuckGo Search
+- dotenv, pandas, numpy
 
 ---
 
- ⚙️ Installation & Setup Guide
+## ⚙️ Installation & Setup Guide
 
 Follow the steps below to set up **FinWise** on your local machine.
 
-*### 1️⃣ Clone the Repository:
-```bash
-git clone https://github.com/<your-github-username>/finwise.git
-cd finwise
+#### 1️⃣ Clone the Repository:
+`'''bash`<br>
+`git clone https://github.com/aarekhv/FinWise_Innovatrix`<br>
+`cd FinWise_Innovatrix`
 
-*### 2️⃣ Create & Activate Virtual Environment:
-# Create a virtual environment:-
-python -m venv venv
-# Activate it:-
-# For Windows:
-venv\Scripts\activate
-# For Mac/Linux:
-source venv/bin/activate
+#### 2️⃣ Create & Activate Virtual Environment:
+ *Create a virtual environment:-*<u><br>
+`python -m venv venv`<br>
+ *Activate it:-*<br>
+ -For Windows:<br>
+`venv\Scripts\activate`<br>
+ -For Mac/Linux:<br>
+`source venv/bin/activate`
 
-*### 3️⃣ Install Dependencies:
-pip install -r requirements.txt
+#### 3️⃣ Install Dependencies:
+`pip install -r requirements.txt`
 
-*### ▶️ Run the App:
-streamlit run app.py
-- The app will open in your default browser at http://localhost:8501
-
----
-
-📸 Preview of our Project:
-https://drive.google.com/drive/folders/1UZvxJRp-dGLrN6dN0N66DTK-aJXGkyvj?usp=sharing
+#### 4️⃣ Run the App:
+`streamlit run app.py`<br>
+-- The app will open in your default browser locally at http://localhost:8501
 
 ---
 
-📬 Contact & Credits:
+## 📸 Preview of our Project:
+[Google Drive Link](https://drive.google.com/drive/folders/1UZvxJRp-dGLrN6dN0N66DTK-aJXGkyvj?usp=sharing)
+
+---
+
+## 📬 Contact & Credits:
 This project was created as a submission for the **Google Campus Solution Challenge 2025**, under the team name **Innovatrix**.
 
 ### 👥 Team Innovatrix
 |       Name        |       Course       |      Role      |                 LinkedIn                   |
-|-------------------|--------------------|----------------|--------------------------------------------|
+|:-----------------:|:------------------:|:--------------:|:------------------------------------------:|
 | Aarekh Verma      |  BTech CSE 4th Sem |   Team Leader  |        www.linkedin.com/in/aarekhv         |
 | Kiran Vishwakarma |     BCA 4th Sem    |   Team Member  |       www.linkedin.com/in/kirannvish       |
 | S Satvika         |  BTech CSE 4th Sem |   Team Member  |        www.linkedin.com/in/ssatvika        |
